@@ -28,7 +28,7 @@ jobs:
             -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Build debug APK
-        run: ./gradlew :app:assembleFossDebug --no-daemon --stacktrace
+        run: bash ./gradlew :app:assembleFossDebug --no-daemon --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
